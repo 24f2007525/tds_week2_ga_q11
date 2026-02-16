@@ -14,5 +14,5 @@
             ]
         }
     },
-    "postCreateCommand": "curl -LsSf https://astral.sh | sh && source $HOME/.cargo/env && uv pip install --system fastapi"
+    "postCreateCommand": "curl -LsSf https://astral.sh | sh && export PATH=$PATH:$HOME/.cargo/bin && uv pip install --system fastapi"
 }
